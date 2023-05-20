@@ -34,5 +34,6 @@ public class BulletPool
         Bullet bullet = Object.Instantiate(_weaponAsset.BulletPrefab);
         bullet.Construct(_weapon, _weaponAsset, this);
         bullet.SetActive(false);
+        Bullets.Push(bullet);
     }
 }
